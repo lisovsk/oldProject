@@ -1,0 +1,39 @@
+.sub-header-2 {
+	padding: 30px 30px 30px 33px;
+
+	&__elem {
+		display: inline-block;
+		&_logo {
+			margin-right: 30px;
+		}
+		&:last-child {
+			float: right;
+		}
+
+		&_search {
+			width: calc(100% - 350px);
+		}
+	}
+}
+@media only screen and (max-width: $tabletStyles) {
+	.logo {
+		margin: auto;
+		width: 100px;
+	}
+	.logo__img {
+		width: 100%;
+	}
+	.sub-header-2 {
+		padding: 12px 20px 15px 16px;
+		&__elem {
+			vertical-align: middle;
+			&:last-child {
+				float: none;
+			}
+			&_logo {
+				margin-right: 0;
+				width: calc(100% - 55px);
+			}
+		}
+	}
+}

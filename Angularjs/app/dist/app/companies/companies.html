@@ -1,0 +1,45 @@
+  <div>
+
+    <div class="grid-title-100">
+		<md-toolbar class="md-primary toolbar-primary">
+			<div class="md-toolbar-tools">
+			  	<h2 class="md-flex">List of companies</h2>
+			</div>
+		</md-toolbar>
+    </div>
+
+    <div class="grid-title-100">
+		<md-list class="wr-items-companies">
+			<md-list-item ng-click="editOrCreateDialog($event, item, 'udate')" class="md-1-line" ng-repeat="item in companiesController.filtratedCompaniesItems" ng-click="null" ng-if="$index < (companiesController.quantityElemsForOnePage ? companiesController.quantityElemsForOnePage : companiesController.defaultQuantityElemsForOnePage)*pages.current && $index >= (companiesController.quantityElemsForOnePage ? companiesController.quantityElemsForOnePage : companiesController.defaultQuantityElemsForOnePage)*(pages.current - 1);">
+				<div class="md-list-item-text md-list-item-text_order" layout="column">
+				  <div><span class="name-company">{{ item.companyName }}</span> <span class="goods">Goods: <span ng-repeat="product in item.companyGoods">{{product}}<spam ng-if="!$last">, <span></span></span></div>
+				</div>
+				<span class="wr-icons">
+					<md-button class="md-raised md-button wr-icon" ng-click="editOrCreateDialog($event, item, 'udate')">
+						<md-icon md-svg-src="assets/images/icons/ic_create_black_24px.svg" aria-label="Edit"></md-icon>
+						<span>Edit</span>
+					</md-button>
+					<md-button  class="md-raised md-button wr-icon" ng-click="deleteDialog($event, item)">
+						<md-icon md-svg-src="assets/images/icons/ic_delete_forever_black_24px.svg" aria-label="Delete "></md-icon>
+						<span>Delete</span>
+					</md-button>
+				</span>
+			</md-list-item>
+		</md-list>
+    </div>
+
+    <div  class="grid-title-100">
+		<div class="wr-naw-companies">
+			<div class="quantity-pages">
+				<form name="formQuantityElements" action="">
+					<md-input-container>
+					  <label>Quantity Elements</label>
+					  <input name="quantityElements" type="number" required min="1" ng-model="companiesController.quantityElemsForOnePage" ng-change="changeQuantityPages()">
+					  <span class="error" ng-show="formQuantityElements.quantityElements.$invalid">Invalid value. Default value {{companiesController.defaultQuantityElemsForOnePage}}</span>
+					</md-input-container>
+				</form>
+			</div>
+			<md-button  ng-click="editOrCreateDialog($event)" class="md-raised md-primary">New</md-button>
+		</div>
+    </div>
+</div>

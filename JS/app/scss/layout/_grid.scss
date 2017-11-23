@@ -1,0 +1,28 @@
+.grid__row:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+[class*="grid__col"] {
+	float: left;
+	display: inline;
+	padding-right: 10px;
+}
+[class*="grid__col"]:last-child {
+	padding-right: 0;
+}
+.grid__col-left {width: 50.625%;}
+.grid__col-right {width: 49.375%;}
+.grid__col-right-right {width: 59.0717299578%;}
+.grid__col-right-left {width: 40.9282700422%;}
+
+@media only screen and (max-width: $tabletStyles) {
+	[class*="grid__col"] {
+		padding-right: 7px;
+	}
+	.grid__col-left {width: 100%; padding-right: 0;}
+	.grid__col-right {width: 100%;}
+}

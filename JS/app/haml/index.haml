@@ -1,0 +1,574 @@
+!!! 5
+%html
+  %head
+    %meta{charset:"utf-8"}
+    %meta{name:"viewport", content: "width=device-width"}
+    %title
+      document
+    %link{href:"assets/css/styles.css", rel:"stylesheet"}
+    /[if lt IE 11]
+      %script{src:"assets/js/ie/ie.min.js", type:"text/javascript"}
+    /[if IE 8]
+      %link{href:"assets/css/ie8.css", rel:"stylesheet"}
+  %body
+    %div.container
+      %header.header
+        %div.sub-header-1
+          %div.l-max-width
+            %div.sub-header-1__elem
+              %a.wr-icon-text-elem{href: "tel:18005551234"}
+                %span.wr-icon-text-elem__icon.icon-phone.is-not-visible-in-mob
+                %span.wr-icon-text-elem__text
+                  1-800-555-1234
+            %div.sub-header-1__elem.is-not-visible-in-mob
+              %a.wr-icon-text-elem{href: "#"}
+                %span.wr-icon-text-elem__icon.icon-address
+                %span.wr-icon-text-elem__text
+                  Store Locator
+            %div.sub-header-1__elem
+              %span.wr-icon-text-elem
+                %span.wr-icon-text-elem__icon.icon-flag
+                %span.wr-icon-text-elem__text.is-not-visible-in-mob
+                  Language
+                %span.wr-icon-text-elem__icon.wr-icon-text-elem__icon_arrow.icon-caret-right.is-not-visible-in-mob
+        %div.sub-header-2.l-max-width.clearfix
+          %div.sub-header-2__elem.is-not-visible-only-mob
+            %div.mob-menu-button.js-mob-menu-button
+              %div.mob-menu-button__elem
+              %div.mob-menu-button__elem
+              %div.mob-menu-button__elem
+          %div.sub-header-2__elem.sub-header-2__elem_logo
+            %div.logo
+              %a.logo__link{href: "#"}
+                %img.logo__img{src:"assets/images/logo.png", alt: "logo"}
+          %div.sub-header-2__elem.sub-header-2__elem_search.is-not-visible-in-mob
+            %div.search
+              %form{action: "#"}
+                %span.search__icon.icon-search
+                %input{type: "search", value: ""}.search__input
+          %div.sub-header-2__elem
+            %div.shopping-bag.js-shopping-bag
+              %span.shopping-bag__icon.icon-shopping-bag
+              %span.shopping-bag__wr_info
+                %div.shopping-bag__title.is-not-visible-in-mob
+                  Shopping bag:
+                %div.shopping-bag__subtotal.is-not-visible-in-mob
+                  Subtotal: $0.00
+                %div.shopping-bag__wr-quantity
+                  %span.is-not-visible-in-mob
+                    Cart: 
+                  %span.shopping-bag__quantity
+                    0
+                  %span.is-not-visible-in-mob
+                    items(s)
+        %div.header-nav
+          %div.nav.l-max-width.js-nav
+            %ul.nav__items.js-nav-elems
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  new arrivals  
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  collections  
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  shoes  
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  bags
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  lingerie
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  swim
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  accessories
+              %li.nav__item.js-nav-elem
+                %a{href: "#"}.nav__link
+                  sale
+              %li.nav__item.nav__more.js-nav-more.js-nav-elem{style: "display:none;"}
+                %span.nav__more-elem
+                  show more
+                %ul.nav__elems-more.js-nav-elems-more
+        %div.masonry
+          %div.grid__row.l-max-width
+            %div.grid__col-left
+              %a.masonry__link{href:"#"}
+                %img.masonry__img{src: "assets/images/img1.png"}
+              %a.masonry__link{href:"#"}
+                %img.masonry__img{src: "assets/images/img2.png"}
+            %div.grid__col-right
+              %div.grid__col-right-left
+                %a.masonry__link{href:"#"}
+                  %img.masonry__img{src: "assets/images/img3.png"}
+                %a.masonry__link{href:"#"}
+                  %img.masonry__img{src: "assets/images/img4.png"}
+              %div.grid__col-right-right
+                %a.masonry__link{href:"#"}
+                  %img.masonry__img{src: "assets/images/img5.png"}
+                %a.masonry__link{href:"#"}
+                  %img.masonry__img{src: "assets/images/img6.png"}
+        %div.center-title.l-max-width.is-not-visible-in-mob
+          %button.center-title__button
+            new this week
+        %div.carousel__wr-wr.l-max-width
+          %div.carousel__wr.js-width-carousel
+            %div.carousel.js-carousel
+              %span.carousel__arrow_prev.icon-chevron-thin-left.js-carousel__arrow_prev
+              %span.carousel__arrow_next.icon-chevron-thin-right.js-carousel__arrow_next
+              %ul.carousel__list.js-carousel__elems
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel1.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          59.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $99.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                    %span.product-card__sale
+                      Sale
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel2.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.99
+                        %a.product-card__title{href:"#"}
+                          Striped pleated dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $10.00(10%)
+                        %span.product-card__discount-price
+                          $49.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel3.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          34.99
+                        %a.product-card__title{href:"#"}
+                          Linen cotton blend dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $59.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          3/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel4.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel1.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          59.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $99.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                    %span.product-card__sale
+                      Sale
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel2.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.99
+                        %a.product-card__title{href:"#"}
+                          Striped pleated dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $10.00(10%)
+                        %span.product-card__discount-price
+                          $49.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel3.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          34.99
+                        %a.product-card__title{href:"#"}
+                          Linen cotton blend dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $59.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          3/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel4.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel1.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          59.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $99.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                    %span.product-card__sale
+                      Sale
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel2.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.99
+                        %a.product-card__title{href:"#"}
+                          Striped pleated dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $10.00(10%)
+                        %span.product-card__discount-price
+                          $49.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel3.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          34.99
+                        %a.product-card__title{href:"#"}
+                          Linen cotton blend dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $59.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          3/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel4.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel1.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          59.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $99.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                    %span.product-card__sale
+                      Sale
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel2.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.99
+                        %a.product-card__title{href:"#"}
+                          Striped pleated dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $10.00(10%)
+                        %span.product-card__discount-price
+                          $49.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel3.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          34.99
+                        %a.product-card__title{href:"#"}
+                          Linen cotton blend dress
+                      %div.product-card__wr-discount
+                        %span.product-card__discount-percent
+                          Save: $40.00(35%)
+                        %span.product-card__discount-price
+                          $59.99
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          3/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            22
+                          )
+                %li.carousel__item.js-carousel__elem
+                  %div.product-card
+                    %a.product-card__wr-img{href:"#"}
+                      %img.product-card__img{src:"assets/images/carousel/carousel4.png"}
+                    %div.product-card__wr-info
+                      %div.product-card__wr-title-price.clearfix
+                        %div.product-card__price.js-product-card__price
+                          %span.product-card__sign
+                            $
+                          39.90
+                        %a.product-card__title{href:"#"}
+                          Swiss embroidery cotton dress
+                      %div.product-card__wr-valuation
+                        %div.product-card__wr-valuation-heart
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.active.icon-heart-outlined
+                          %span.product-card__valuation-heart.icon-heart-outlined
+                        %span.product-card__valuation-text
+                          4/5(
+                          %a{href:"#"}.product-card__valuation-quantity
+                            45
+                          )
+  %script{src:"assets/js/common.min.js", type:"text/javascript"}

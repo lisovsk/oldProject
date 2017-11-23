@@ -1,0 +1,17 @@
+.container {
+	background: #fff;
+}
+html {
+	height: 100%;
+}
+body {
+	-webkit-perspective: 1px;
+	perspective: 1px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  	height: 100%;
+  	overflow: hidden;
+}
+.error {
+	color: rgb(221,44,0);
+}

@@ -1,0 +1,1 @@
+angular.module("app", ['ngMaterial', 'ngMessages', 'cl.paging', 'angular-loading-bar', 'ngAnimate']);

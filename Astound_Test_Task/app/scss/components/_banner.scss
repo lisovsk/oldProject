@@ -1,0 +1,146 @@
+$carousel__empty-between: 40px;
+$carousel__count-elements: 3;
+$carousel__empty-for-one: ($carousel__empty-between * ($carousel__count-elements - 1) ) / 3;
+.carousel {
+	clear: both;
+	&__elem {
+		display: inline-block;
+		width: 33.33%;
+		padding: 0 $carousel__empty-for-one / 2;
+		overflow: hidden;
+		&:first-child {
+			padding-left: 0;
+			padding-right: $carousel__empty-for-one;
+		}
+		&:last-child {
+			padding-right: 0;
+			padding-left: $carousel__empty-for-one;
+		}
+	}
+	&__wr-img {
+		position: relative; /* for hover */
+		&:hover .carousel__hover {
+			display: block;
+		}
+	}
+	&__img {
+		width: 100%;
+		max-width: 302px;
+	}
+	&__hover {
+		background: rgba(0, 0, 0, .45);
+		position: absolute;
+		display: none;
+		top: 0;
+		height: 235px;
+		width: 100%;
+	}
+	&__text {
+		font-size: 24px;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		margin-top: 65px;
+		line-height: 30px;
+	}
+	&__button {
+		height: 35px;
+		width: 135px;
+		margin: auto;
+		display: block;
+		background-color: rgba(255, 255, 255, .8);
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+		line-height: 35px;
+		cursor: pointer;
+		color: #272727;
+	}
+	&__arrow {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	$carousel__empty-between: 25px;
+	$carousel__empty-for-one: ($carousel__empty-between * ($carousel__count-elements - 1) ) / 3;
+	.carousel {
+		&__elem {
+			padding: 0 $carousel__empty-for-one / 2;
+			&:first-child {
+				padding-right: $carousel__empty-for-one;
+			}
+			&:last-child {
+				padding-left: $carousel__empty-for-one;
+			}
+		}
+		&__text {
+			margin-bottom: 20px;
+			margin-top: 40px;
+			font-size: 21px;
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.carousel {
+		&__wr-img {
+			&:hover .carousel__hover {
+				display: none;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 480px) {
+	$carousel__arrow-height: 27px;
+	.carousel {
+		position: relative; /*fro arrow*/
+		width: 100%;
+		max-width: 302px;
+		margin: auto;
+		&__gallery {
+		  width: 100%;
+		  overflow: hidden;
+		}
+		&__elems {
+		  width: 9999px;
+		  margin: 0;
+		  padding: 0;
+		  transition: margin-left 250ms;
+		}
+		&__elem {
+			width: 300%;
+			max-width: 302px;
+			padding: 0;
+			display: inline-block;
+
+			&:first-child {
+				padding-right: 0;
+			}
+			&:last-child {
+				padding-left: 0;
+			}
+		}
+
+		&__arrow {
+			border: none;
+			position: absolute;
+			padding: 0;
+			top: 50%;
+			margin-top: -($carousel__arrow-height / 2);
+			display: inline-block;
+			height: $carousel__arrow-height;
+			width: 17px;
+
+			&_prev {
+				background: url(../img/carousel/arrow/prev.png);
+				left: 20px;
+			}
+			&_next {
+				background: url(../img/carousel/arrow/next.png);
+				right: 20px;
+			}
+		}
+	}
+}

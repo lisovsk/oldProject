@@ -1,0 +1,71 @@
+.share {
+	&__title {
+		font-size: 14px;
+		line-height: 14px;;
+		vertical-align: 10px;
+		display: inline-block;
+		color: $color-dark-grey;
+		font-weight: bold;
+		width: 70px;
+		text-transform: uppercase;
+	}
+	&__link {
+		display: inline-block;
+		margin-right: 15px;
+		height: 33px;
+		width: 33px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&_fb {
+			background: url(../img/icons/share/fb.png);
+			&:hover {
+				background: url(../img/icons/share/hover/fb.png);
+			}
+		}
+		&_tw {
+			background: url(../img/icons/share/tw.png);
+			&:hover {
+				background: url(../img/icons/share/hover/tw.png);
+			}
+		}
+		&_g-plus {
+			background: url(../img/icons/share/g-plus.png);
+			&:hover {
+				background: url(../img/icons/share/hover/g-plus.png);
+			}
+		}
+		&_pin {
+			background: url(../img/icons/share/pin.png);
+			&:hover {
+				background: url(../img/icons/share/hover/pin.png);
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.share {
+		&__title {
+			display: none;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.share {
+		float: right;
+		width: 192px;
+		margin-left: auto;
+		margin-right: auto;
+		&__title {
+			display: none;
+		}
+		&__link {
+			margin-right: 20px;
+		}
+	}
+}
+@media only screen and (max-width: 480px) {
+	.share {
+		float: none;
+	}
+}

@@ -1,0 +1,16 @@
+.sub-header-1 {
+	background-color: #060e0c;
+	line-height: 30px;
+	padding: 0 $bIndentation;
+	font-family: $bFontFamily;
+
+	&__elem {
+		display: inline-block;
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+			float: right;
+		}
+	}
+}

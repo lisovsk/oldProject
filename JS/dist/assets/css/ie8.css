@@ -1,0 +1,6 @@
+html, body {
+  min-width: 985px;
+  overflow-x: scroll; }
+
+.search__input {
+  width: 535px; }

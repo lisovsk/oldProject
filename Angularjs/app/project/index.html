@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Avalon Fa</title>
+	<link rel="stylesheet" href="assets/css/lib.min.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wr-parallax">
+		<header class="parallax">
+		  <h1 class="parallax__title">AVALON FA LTD</h1>
+		  <p class="parallax__text"> IT'S TIME TO CHOOSE THE BEST HOME.</p>
+		</header>
+		<div class="container" ng-controller="CompaniesController as companiesController">
+			<div ng-cloak="" class="wr-grid">
+				<div class="wr-bar wr-bar-companies">
+					<div  ng-include="companiesController.companiesView" class="grid-in-100">
+					</div>
+				</div>
+				<div class="wr-bar wr-bar-filter">
+					<div ng-controller="FiltersController as filters" ng-include="filters.filtersView" class="grid-in-100">
+					</div>
+				</div>
+			</div>
+			<div class="wr-wr-pagination">
+				<div ng-if="pages.quantity > 1" ng-controller="PaginationController as paginationController" ng-include="paginationController.paginationView" class="grid-in-100">
+				</div>
+			</div>
+			<div ng-include="companiesController.dialogView" style="width:100%;">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script src="assets/js/js-lib.js"></script>
+<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script> -->
+<script src="assets/js/app.js"></script>
+

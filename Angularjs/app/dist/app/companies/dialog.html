@@ -1,0 +1,37 @@
+<script type="text/ng-template" id="dialog1.tmpl.html">
+  <md-dialog>
+    <form ng-cloak name="editorForm">
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <h2>Editor</h2>
+        </div>
+      </md-toolbar>
+      <div class="editor-form">
+        <md-input-container class="editor-input editor-input_company">
+          <label>Company</label>
+          <input type="text" ng-model="currentItem.companyName" required ng-change="chackUnique()" name="nameCompany">
+          <span class="error" ng-show="editorForm.nameCompany.$invalid && editorForm.nameCompany.$touched">{{getError(editorForm.nameCompany.$error)}}</span>
+        </md-input-container>
+        <div>
+          <md-input-container class="editor-input editor-input_goods" ng-repeat="goods in currentItem.companyGoods track by $index">
+            <label>product {{$index+1}}</label>
+            <input name="product" required type="text" ng-model="currentItem.companyGoods[$index]">
+            <span class="error" ng-show="editorForm.product.$invalid && editorForm.product.$touched">Required</span>
+            <md-button ng-if="!$first" ng-click="deleteProduct($index)" class="md-icon-button md-icon-button_d" aria-label="delete product">
+              <md-icon md-svg-icon="assets/images/icons/ic_delete_forever_black_24px.svg"></md-icon>
+            </md-button>
+          </md-input-container>
+        </div>
+      </div>
+      <md-button ng-click="newProduct();"  class="md-raised md-primary new-product">New product</md-button>
+      <md-dialog-actions layout="row">
+        <md-button ng-click="hide()">
+         Cancel
+        </md-button>
+        <md-button ng-click="save()" ng-disabled="editorForm.$invalid">
+          Save
+        </md-button>
+      </md-dialog-actions>
+    </form>
+  </md-dialog>
+</script>

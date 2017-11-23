@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.is-not-visible-only-mob {
+	display: none !important;
+}
+.is-not-scroll {
+	overflow: hidden !important;
+}
+
+@media only screen and (max-width: $tabletStyles) {
+	.is-not-visible-in-mob {
+		display: none !important;
+	}
+	.is-not-visible-only-mob {
+		display: inline-block !important;
+	}
+ }

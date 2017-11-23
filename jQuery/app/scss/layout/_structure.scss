@@ -1,0 +1,32 @@
+.container {
+	height: 100%;
+	min-width: 320px;
+}
+.wr-gallery {
+	height: 100%
+}
+.gallery {
+	height: calc(100% - 130px);
+	overflow-y: scroll;
+}
+.gallery__config {
+	height: 130px;
+}
+@media only screen and (max-width: 1010px) {
+	.gallery {
+		height: calc(100% - 190px);
+		overflow-y: scroll;
+	}
+	.gallery__config {
+		height: 190px;
+	}
+}
+@media only screen and (max-width: 660px) {
+	.gallery {
+		height: calc(100% - 310px);
+		overflow-y: scroll;
+	}
+	.gallery__config {
+		height: 310px;
+	}
+}

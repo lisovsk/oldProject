@@ -1,0 +1,82 @@
+.gallery {
+	&__config {
+		overflow: hidden;
+	}
+	&__quantity-row {
+		font-size: 20px;
+	}
+	&__wr-buttons {
+		margin-top: 10px;
+		display: inline-block;
+		width: 700px;
+		float: left;
+	}
+	&__button {
+		position: relative;
+		padding: 5px 10px;
+		margin: 0px 0 5px 10px;
+		border-radius: 10px;
+		font-size: 20px;
+		color: #FFF;
+		text-decoration: none;
+		&:active {
+			transform: translate(0px,5px);
+			-webkit-transform: translate(0px,5px);
+			border-bottom: 1px solid;
+		}
+		&_blue
+		{
+			background-color: #3498DB;
+			border-bottom: 5px solid #2980B9;
+			text-shadow: 0px -2px #2980B9;
+		}
+
+		&_red
+		{
+			background-color: #E74C3C;
+			border-bottom: 5px solid #BD3E31;
+			text-shadow: 0px -2px #BD3E31;
+		}
+
+		&_green
+		{
+			background-color: #82BF56;
+			border-bottom: 5px solid #669644;
+			text-shadow: 0px -2px #669644;
+		}
+
+		&_yellow
+		{
+			background-color: #F2CF66;
+			border-bottom: 5px solid #D1B358;
+			text-shadow: 0px -2px #D1B358;
+		}
+	}
+	&__item {
+		background: rgba(0,0,0, .5);
+		height: 100%;
+		position: relative;
+	}
+	&__spinner {
+		color: #fff;
+		font-size: 40px;
+		position: absolute;
+		left: 50%;
+		top:50%;
+		margin-left: -20px;
+		margin-top: -20px;
+	}
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+@media only screen and (max-width: 660px) {
+	.gallery {
+		&__wr-buttons {
+			width: 320px;
+		}
+	}
+}

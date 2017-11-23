@@ -1,0 +1,10 @@
+.container {
+	min-width: 320px;
+}
+.l-max-width {
+	margin: auto;
+	max-width: $bMaxWidth;
+}
+@media only screen and (max-width: $tabletStyles) {
+
+}

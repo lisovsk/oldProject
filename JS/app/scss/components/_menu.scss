@@ -1,0 +1,100 @@
+.mob-menu-button {
+	cursor: pointer;
+	opacity: 1;
+	width: 22px;
+	height: 20px;
+	&__elem {
+		width: 100%;
+		height: 4px;
+		background-color: #00a388;
+		margin-bottom: 4px;
+
+		transition: opacity .1s ease-in-out, transform .2s ease-in-out;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.mob-menu-button_close {
+	position: relative;
+	.mob-menu-button__elem {
+		position: absolute;
+		top: 8px;
+		opacity: 0;
+		&:first-child {
+			transform: rotate(-45deg);
+			opacity: 1;
+		}
+		&:last-child {
+			transform: rotate(45deg);
+			opacity: 1;
+		}
+	}
+}
+.nav {
+    font-family: "Pfdintextcomppro Regular";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    &__items {
+    	display: inline-block;
+    	text-align: left;
+    }
+    &__item {
+    	display: inline-block;
+    }
+    &__link, &__more-elem {
+    	font-size: 18px; 
+        color: #231f20;
+        display: inline-block;  
+        padding: 0 32px;
+        text-align: center;
+        line-height: 40px;
+    }
+    &__more-elem {
+    	cursor: pointer;
+		position: relative;
+		background: #fff;
+		text-transform: uppercase;
+		color: #ff6138;
+    }
+    &__elems-more {
+		position: absolute;
+		margin-right: 5px;
+		background: #fff;
+		min-width: 130px;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+		opacity: 0;
+		transition: opacity .15s ease-in-out;
+
+    }
+    &__elems-more &__item {
+		display: block;
+    }
+    &__more {
+    	&:hover .nav__elems-more {
+    		opacity: 1;
+    	}
+    }
+} 
+
+@media only screen and (max-width : $tabletStyles) {
+    .nav {
+	    position: fixed;
+	    top: 95px;
+	    left: 0;
+	    background-color: rgba(255, 255, 255, .99);
+	    overflow: hidden;
+	    padding: 0 20px;
+	    height: 0;
+
+	    transition: height .2s ease-in-out;
+      	&__item {    
+      	    width: 100%;  
+      	    border-bottom: 1px solid #576979; 
+      	}  
+    }
+    .is-visible-menu {
+    	height: 100%;
+    }
+}

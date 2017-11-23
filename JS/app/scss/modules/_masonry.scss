@@ -1,0 +1,17 @@
+.masonry {
+	padding: 70px 10px 30px 10px;
+	border-top: solid #beeb9f 1px;
+
+	&__img {
+		padding-bottom: 10px;
+	}
+}
+@media only screen and (max-width: $tabletStyles) { 
+	.masonry {
+		padding: 15px 10px 40px 10px;
+
+		&__img {
+			padding-bottom: 7px;
+		}
+	}
+}

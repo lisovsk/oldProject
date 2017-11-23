@@ -1,0 +1,62 @@
+.shopping-bag {
+	cursor: pointer;
+	&__icon {
+		display: inline-block;
+		background: #00a388;
+		width: 43px;
+		line-height: 43px;
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		margin-right: 10px;
+		vertical-align: top;
+	}
+	&__wr_info {
+		display: inline-block;
+		color: #575c5b;
+		font-weight: bold;
+		vertical-align: bottom;
+		max-width: 130px;
+	}
+	&__title {
+		text-transform: uppercase;
+		color: #11a990;
+		font-size: 12px;
+		font-family: "Pfdintextcomppro Regular";
+		padding-bottom: 10px;
+		line-height: 12px;
+	}
+	&__subtotal, &__wr-quantity {
+		font-family: "Dinnextltpro Regular";
+		font-size: 10px;
+		line-height: 10px;
+	}
+}
+
+@media only screen and (max-width: $tabletStyles) {
+	.shopping-bag {
+		position: relative;
+		left: 0;
+
+		transition: left .2s ease-in-out; //hide if menu is open
+		&__icon {
+			width: 33px;
+			line-height: 33px;
+			margin-right: 0;
+			font-size: 16px;
+		}
+		&__quantity {
+			position: absolute;
+			top: -8px;
+			right: -8px;
+			width: 17px;
+			background-color: #006d5b;
+			color: #fefefe;
+			text-align: center;
+			line-height: 17px;
+		}
+	}
+	.is-hide-bag {
+		left: 100px;
+	}
+}

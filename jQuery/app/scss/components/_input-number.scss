@@ -1,0 +1,72 @@
+.input-number {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  height: 54px;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+
+  &__input {
+    border: none;
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+    outline: none;
+    position: relative;
+    width: calc(100% - 40px);
+    font-size: 20px
+  }
+  &__increment,
+  &__decrement {
+    background-color: white;
+    border: 0;
+    border-left: 1px solid #e6ebee;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    text-align: center;
+    right: 0;
+  }
+
+  &__increment:hover:before {
+    border-bottom-color: #0073ba;
+  }
+
+  &__decrement:hover:before {
+    border-top-color: #0073ba;
+  }
+
+  &__increment {
+    border-bottom: 1px solid #e6ebee;
+    top: 0;
+  }
+
+  &__decrement {
+    bottom: 0;
+  }
+
+  &__increment:before,
+  &__decrement:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+
+  &__increment:before {
+    border-bottom: 5px solid #0ca6f2;
+  }
+
+  &__decrement:before {
+    border-top: 5px solid #0ca6f2;
+  }
+}

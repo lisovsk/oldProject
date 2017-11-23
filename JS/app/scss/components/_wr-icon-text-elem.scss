@@ -1,0 +1,21 @@
+.wr-icon-text-elem {
+	cursor: pointer;
+	&__icon {
+		font-size: 18px;
+		color: #7c8281;
+		padding-right: 5px;
+		vertical-align: middle;
+
+		&_arrow {
+			padding-right: 0;
+			padding-left: 10px;
+		}
+ 	}
+	&__text {
+		font-size: 12px;
+		color: #c4cdcb;
+		font-weight: bold;
+		vertical-align: middle;
+		font-family: "Dinnextltpro Regular";
+	}
+}

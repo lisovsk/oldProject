@@ -1,0 +1,50 @@
+!!! 5
+%html
+  %head
+    %meta{charset:"utf-8"}
+    %meta{name:"viewport", content: "width=device-width"}
+    %title
+      document
+    %link{href:"assets/css/styles.css", rel:"stylesheet"}
+    -# /[if lt IE 11]
+    -#   %script{src:"assets/js/ie/ie.min.js", type:"text/javascript"}
+    -# /[if IE 8]
+    -#   %link{href:"assets/css/ie8.css", rel:"stylesheet"}
+  %body
+    %div.container
+      %div.gallery__config
+        %div.input-number.js-input-number{min:"0", max:"10"}
+          %input.input-number__input{type:"text", value:"3", 'data-min':3, 'data-max':10}.js-gallery__quantity-row
+          %button.input-number__increment.js-input-number__increment{"data-increment":"true"}
+          %button.input-number__decrement.js-input-number__decrement{"data-decrement":"true"}
+        %div.gallery__wr-buttons.js-gallery__wr-buttons
+          %button.gallery__button.gallery__button_red.animate{"data-type": ' '}.js-gallery__button
+            all
+          %button.gallery__button.gallery__button_blue.animate{"data-type": 'abstract'}.js-gallery__button
+            abstract
+          %button.gallery__button.gallery__button_green.animate{"data-type": 'animals'}.js-gallery__button
+            animals
+          %button.gallery__button.gallery__button_red.animate{"data-type": 'business'}.js-gallery__button
+            business
+          %button.gallery__button.gallery__button_yellow.animate{"data-type": 'cats'}.js-gallery__button
+            cats
+          %button.gallery__button.gallery__button_green.animate{"data-type": 'city'}.js-gallery__button
+            city
+          %button.gallery__button.gallery__button_red.animate{"data-type": 'food'}.js-gallery__button
+            food
+          %button.gallery__button.gallery__button_yellow.animate{"data-type": 'nightlife'}.js-gallery__button
+            nightlife
+          %button.gallery__button.gallery__button_blue.animate{"data-type": 'fashion'}.js-gallery__button
+            fashion
+          %button.gallery__button.gallery__button_green.animate{"data-type": 'people'}.js-gallery__button
+            people
+          %button.gallery__button.gallery__button_red.animate{"data-type": 'nature'}.js-gallery__button
+            nature
+          %button.gallery__button.gallery__button_yellow.animate{"data-type": 'sports'}.js-gallery__button
+            sports
+          %button.gallery__button.gallery__button_blue.animate{"data-type": 'technics'}.js-gallery__button
+            technics
+          %button.gallery__button.gallery__button_green.animate{"data-type": 'transport'}.js-gallery__button
+            transport
+      %div.gallery.js-gallery
+  %script{src:"assets/js/common.min.js", type:"text/javascript"}

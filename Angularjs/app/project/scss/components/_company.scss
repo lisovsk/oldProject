@@ -1,0 +1,70 @@
+md-grid-list md-grid-tile figure {
+	align-items: flex-start;
+}
+md-list-item .md-list-item-inner {
+	justify-content: space-between;
+}
+.md-list-item-text_order {
+	order: -1;
+}
+md-toolbar:not(.md-menu-toolbar).md-accent {
+	color:red;
+}
+.wr-icon {
+	margin-right: 10px;
+}
+.quantity-pages {
+	margin-left: 8px;
+	width: 140px;
+}
+.wr-items-companies, .wr-naw-companies, .grid-in-100 {
+	width: 100%;
+}
+.wr-items-companies {
+	height: 50vh;
+	overflow: auto;
+}
+.goods {
+	max-width: 200px;
+}
+.name-company {
+	width: 150px;
+}
+.name-company, .goods {
+	display: inline-block;
+	white-space: nowrap;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	vertical-align: top;
+}
+
+#loading-bar .bar {
+  position: relative;
+  height: 5px;
+}
+.wr-naw-companies {
+	padding-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+	.goods {
+		max-width: 100px;
+	}
+	.name-company {
+		width: 85px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.goods {
+		display: none;
+	}
+	.wr-grid {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.name-company {
+		width: 37px;
+	}
+	.wr-icon {
+	    margin-right: 0px;
+	}
+}

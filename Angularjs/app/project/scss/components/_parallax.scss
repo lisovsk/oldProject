@@ -1,0 +1,48 @@
+/*parallax*/
+.wr-parallax {
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.parallax, .parallax:before {
+  background: 50% 50% / cover;
+}
+.parallax {
+  box-sizing: border-box;
+  min-height: 30vw;
+  padding: 15vw 0 5vw;
+  position: relative;
+  -webkit-transform-style: inherit;
+  transform-style: inherit;
+  width: 100vw;
+  background-color: rgba(0,0,0,.3);
+}
+.parallax::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url(../images/header.png);
+	background-size: cover;
+	-webkit-transform-origin: center center 0;
+	-webkit-transform: translateZ(-1px) scale(2);
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}	
+.parallax .parallax__title, .parallax .parallax__text {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+	color: #fff;
+}
+.parallax .parallax__text {
+  background-color: hsla(0, 0%, 100%,0.1);
+}

@@ -1,0 +1,63 @@
+.price-info {
+	font-size: 14px;
+	line-height: 14px;
+	display: inline-block;
+	font-weight: bold;
+	text-transform: uppercase;
+	&__status {
+		color: #4c4c4c;
+	}
+	&__response-status {
+		color: #f3546a;
+	}
+	&__wr-price {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	&__price {
+		font-size: 36px;
+		line-height: 28px;
+		font-weight: bold;
+		display: inline-block;
+		color: #272727;
+		&_old {
+			color: #c8c8c8;
+			text-decoration: line-through;
+			margin-right: 30px;
+		}
+		&_new {
+			color: #f3546a;
+		}
+		&_now{
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.price-info {
+		&__wr-price {
+		    margin-top: 15px;
+		    margin-bottom: 25px;
+		}
+		&__price {
+			&_old {
+				display: none;
+			}
+			&_new {
+				display: none;
+			}
+			&_now{
+				display: inline-block;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.price-info {
+		&__wr-price {
+		    margin-top: 20px;
+		    margin-bottom: 30px;
+		}
+	}
+}

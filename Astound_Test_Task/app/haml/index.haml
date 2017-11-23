@@ -1,0 +1,32 @@
+!!! 5
+%html
+  %head
+    %meta{charset:"utf-8"}
+    %meta{name:"viewport", content: "width=device-width"}
+    %title
+      astound test
+    %link{href:"assets/css/styles.css", rel:"stylesheet"}
+    /[if lt IE 10]
+      %link{href:"assets/css/ie8.css", rel:"stylesheet"}
+      %script{src:"assets/js/ie/libs/classList.min.js", type:"text/javascript"}
+  %body
+    %div.b-container
+      %div.b-product
+        %div.b-left-column
+          /*=include components/_storefront.haml */
+        %div.b-right-column.b-right-column-options
+          %div.b-buying-options
+            %form
+            /*=include components/_color-radiobutton.haml */
+            /*=include components/_select-button_size.haml */
+            /*=include components/_select-button_quantity.haml */
+              %div.b-info-price
+                /*=include components/_price-info.haml */
+                /*=include components/_button.haml */
+        %div.b-left-column.b-left-column-info
+          /*=include components/_product-info.haml */
+        %div.b-right-column.b-right-column_indent-top
+          /*=include components/_share.haml */
+      /*=include components/_banner.haml */
+    %script{src:"assets/js/common.min.js", type:"text/javascript"}
+

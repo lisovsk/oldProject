@@ -1,0 +1,1 @@
+angular.module("app").constant('baseUrl', 'http://localhost:5050/companies/');

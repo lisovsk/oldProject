@@ -1,0 +1,61 @@
+$color-grey-backg: #969696;
+$color-grey-text: #646464;
+.select-button {
+	color: $color-grey-text;
+	margin-bottom: 30px;
+	&__title {
+		font-size: $font-size-base;
+		display: inline-block;
+		color: $color-dark-grey;
+		font-weight: bold;
+		vertical-align: $font-size-base;
+		line-height: $font-size-base;
+		width: 85px;
+	}
+	&__styled-select {
+		background: url(../img/icons/dropdown.png) no-repeat 96% 53%;
+		height: 40px;
+		overflow: hidden;
+		width: 217px;
+		border: 1px solid $color-grey-backg;
+		display: inline-block;
+	}
+	&__select {
+		font-size: $font-size-base;
+		background: transparent;
+		border: none;
+		height: 40px;
+		padding: 8px 10px;
+		width: 245px;
+	}
+	&__select {
+		text-transform: uppercase;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.select-button {
+		margin-bottom: 20px;
+		&_margin {
+			margin-bottom: 25px;
+		}
+		&__title {
+			display: block;
+			margin-bottom: 13px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.select-button {
+		margin-bottom: 25px;
+		&__title {
+			display: inline-block;
+			margin-bottom: auto;
+		}
+		&__styled-select {
+			width: 195px;
+		}
+	}
+
+}
